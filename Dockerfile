@@ -33,5 +33,5 @@ RUN pip install pertpy[de]
 RUN pip install pertpy[coda]
 
 # Install bin2cell
-RUN pip install opencv-python-headless 
 RUN pip install bin2cell
+RUN pip install opencv-python-headless 

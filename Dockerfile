@@ -33,4 +33,5 @@ RUN pip install pertpy[de]
 RUN pip install pertpy[coda]
 
 # Install bin2cell
+RUN mamba install --yes py-opencv 
 RUN pip install bin2cell

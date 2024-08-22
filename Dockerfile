@@ -35,3 +35,7 @@ RUN pip install pertpy[coda]
 # Install bin2cell
 RUN pip install bin2cell
 RUN pip install opencv-python-headless 
+
+# Add missing dependencies
+RUN pip install harmonypy
+RUN pip install pybiomart

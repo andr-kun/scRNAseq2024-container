@@ -39,3 +39,7 @@ RUN pip install opencv-python-headless
 # Add missing dependencies
 RUN pip install harmonypy
 RUN pip install pybiomart
+RUN pip install celltypist
+
+# Temporary fix for scipy 1.14 breaking some packages
+RUN pip install scipy==1.13.1

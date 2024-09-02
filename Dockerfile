@@ -25,12 +25,8 @@ RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
     
 RUN jupyter lab build
 
-# Fix dependencies issues for pertpy
-RUN pip install numba==0.57.0 numpy==1.24.1 chex==0.1.86 optax==0.2.3 jaxlib==0.4.30 numexpr==2.8.4
-
 # Install pertpy
 RUN pip install pertpy[de]
-RUN pip install pertpy[coda]
 
 # Install bin2cell
 RUN pip install bin2cell
@@ -40,6 +36,3 @@ RUN pip install opencv-python-headless
 RUN pip install harmonypy
 RUN pip install pybiomart
 RUN pip install celltypist
-
-# Temporary fix for scipy 1.14 breaking some packages
-RUN pip install scipy==1.13.1

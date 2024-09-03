@@ -40,3 +40,4 @@ RUN pip install harmonypy
 RUN pip install pybiomart
 RUN pip install celltypist
 RUN mamba install --yes r-soupx && mamba clean --all
+RUN pip install decoupler==1.8.0
